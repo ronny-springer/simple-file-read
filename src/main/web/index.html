@@ -9,7 +9,14 @@
         <link rel="stylesheet" href="css/app.css">
     </head>
     <body>
-        <p>Hello world!</p>
+        <div class="box-wrapper">
+            <form action="index.html" method="post" enctype="multipart/form-data" class="form-file-reader">
+                <label for="input-file">Choose files:</label>
+                <input id="input-file" type="file" name="input-file-reader" multiple />
+                <ul class="list-file-reader is-hidden"></ul>
+                <button class="button-form-submit is-hidden" type="submit">read...</button>
+            </form>
+        </div>
         <script src="js/app.js"></script>
     </body>
 </html>
